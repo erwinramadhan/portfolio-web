@@ -1,0 +1,126 @@
+/* Navbar */
+.navbar-brand{
+    font-family: Viga;
+    font-size: 32px;
+}
+
+/* Jumbotron */
+.jumbotron{
+    background-image: url(1366x640.png);
+    background-size: cover;
+    height: 540px;
+    text-align: center;
+    position: relative;
+}
+
+.jumbotron .container{
+    z-index: 1;
+    position: relative;
+}
+
+.jumbotron::after{
+    content: '';
+    display:block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0));
+    position: absolute;
+    bottom: 0;
+}
+
+.jumbotron .display-4 {
+    color:white;
+    margin-top: 225px;
+    font-weight: 200px;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.jumbotron .display-4 span {
+    font-weight: bold;
+}
+
+/* IMG Foto */
+
+.biodata .col-3 img{
+    max-height: 300px;
+    border-radius: 14px;
+}
+
+/* biodata */
+.biodata{
+    background-color:white;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    padding: 30px;
+    border-radius: 12px;
+}
+
+/* biodata kolom kanan */
+.biodata .col-9{
+    padding-top: 10px;
+}
+
+/* biodata-aboutme */
+.biodata h3{
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* ListBiodata */
+.row .listBiodata{
+    margin-top: 15px;
+}
+
+
+
+.col-9{
+    margin-top: 40px;
+}
+
+/* info panel */
+.info-panel{
+    background-color: white;
+    box-shadow: 0 3px 20px rgba(0,0,0,0.5);
+}
+
+/* Utility */
+.tombol{
+    text-transform: uppercase;
+    border-radius: 40px;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 8px;
+    font-weight: bold;
+}
+
+/* DESKTOP VERSION */
+@media (min-width: 992px) { 
+    .nav-link{
+        text-transform: uppercase;
+        color: white;
+        margin-right: 21px;
+    }
+
+    .nav-link:hover::after{
+        content: '';
+        display: block;
+        border-bottom: 3px solid #0b63dc;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-top: -7px;
+    }
+
+    .jumbotron{
+        height: 640px;
+    }
+
+    .jumbotron .display-4{
+        font-size: 62px;
+        margin-top: 170px;
+    }
+
+    .bg-dark{
+    background-color: transparent !important;
+    }
+}
