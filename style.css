@@ -207,18 +207,41 @@ section p{
 }
 
 /* footer */
+
 footer{
-    text-align: center;
+    padding-bottom: 75px;
 }
 
 footer p{
-    color: #0b63dc;
+    color: white;
 }
 
+footer a{
+    font-size: 18px;
+    color: white;
+}
+
+.col-12 h4{
+    color: white;
+    font-size: 18px;
+}
+
+.col-12 .garis{
+    margin-top: -3px;
+    width: 4.5%;
+    height: 4px;
+}
+
+footer .row .footerbawah{
+    margin-top: -5px;
+}
 
 
 /* DESKTOP VERSION */
 @media (min-width: 992px) { 
+    .body{
+        background-color: black;
+    }
     .nav-link{
         text-transform: uppercase;
         color: white;
@@ -255,5 +278,11 @@ footer p{
 
     .testimonial h5{
         font-size: 32px;
+    }
+}
+
+@media (max-width: 992px){
+    .body{
+        background-color: black;
     }
 }
